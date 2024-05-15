@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Translation Page</h1>
+        </header>
+        <main>
+            <div class="language-selector">
+                <select id="source-language">
+                    <option value="english">English</option>
+                    <option value="mongolian">Mongolian</option>
+                    <option value="spanish">Spanish</option>
+                </select>
+                <button id="swap-languages">Swap</button>
+                <select id="target-language">
+                    <option value="mongolian">Mongolian</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                </select>
+            </div>
+            <div class="translation-section">
+                <textarea id="source-text" placeholder="Enter text" rows="10"></textarea>
+                <textarea id="target-text" placeholder="Translation" rows="10" readonly></textarea>
+            </div>
+            <button id="translate-button">Translate</button>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
